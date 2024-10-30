@@ -1,44 +1,91 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
-
+<html lang="th">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-
-    <title>A very simple example</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHEMJIRA PRACHUMKHONG</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-      .description {
-        padding-top: 40px;
-        font-weight: bold;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
 
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px 30px;
+            max-width: 800px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .https://ibb.co/qpmQswF {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .https://www.facebook.com/khemjira.prachumkhong.9 {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            background-color: #0073e6;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 0 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .https://www.facebook.com/khemjira.prachumkhong.9 a:hover {
+            background-color: #005bb5;
+        }
     </style>
-
-    <script>
-
-      function start() {
-        setInterval(function() {
-          const red = Math.floor(Math.random() * 256) + 1;
-          const green = Math.floor(Math.random() * 256) + 1;
-          const blue = Math.floor(Math.random() * 256) + 1;
-          document.getElementById("myHeading").style.color =
-            `#${red.toString(16)}${green.toString(16)}${blue.toString(16)}`;
-        }, 250);
-      }
-
-    </script>
-
-  </head>
-
-  <body onLoad="start();">
-
-    <h1 id="myHeading">My First Web Site&trade;</h1>
-    <hr />
-    <div class="description">This is a very simple example that shows HTML, CSS, and JS</div>
-
-  </body>
-
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.facebook.com/khemjira.prachumkhong.9" alt="Profile Image" class="profile-img">
+        <h1>Khemjira Prachumkhong</h1>
+        <h2>computer science student</h2>
+        <p>hi, you can call me nestle</p>
+        
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+    </div>
+</body>
 </html>
