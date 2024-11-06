@@ -3,89 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KHEMJIRA PRACHUMKHONG</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KHEMJIRA</title>
     <style>
+        /* Reset CSS */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        /* Body */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
             color: #333;
             line-height: 1.6;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
         }
 
-        .container {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 20px 30px;
-            max-width: 800px;
-            width: 90%;
+        /* Banner Section */
+        .banner {
+            background-color: #212121;
+            color: white;
             text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            font-size: 1.8em;
+            font-weight: bold;
         }
 
-        .profile-img {
+        .banner h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .banner p {
+            font-size: 1.2em;
+        }
+
+        /* Main Section */
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+            margin: 0 10%;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Profile Image */
+        .profile-image {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            margin: 0 auto 20px;
             object-fit: cover;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            color: #333;
-        }
-
-        h2 {
-            font-size: 1.2em;
-            color: #777;
             margin-bottom: 20px;
         }
 
-        p {
-            font-size: 1em;
-            margin-bottom: 20px;
-            color: #555;
-        }
-
-        .social-link {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            background-color: #0073e6;
-            padding: 10px 15px;
-            border-radius: 5px;
-            margin: 0 5px;
+        /* Contact Info */
+        .contact-info a {
             display: inline-block;
-            transition: background-color 0.3s;
+            font-size: 1.2em;
+            color: #333;
+            text-decoration: none;
+            border: 2px solid #333;
+            padding: 10px 25px;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
         }
 
-        .social-link:hover {
-            background-color: #005bb5;
+        .contact-info a:hover {
+            background-color: #333;
+            color: white;
         }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <a href="https://ibb.co/qpmQswF"><img src="https://i.ibb.co/qpmQswF/kkk.jpg" alt="kkk" border="0"></a>
-        <h1>Khemjira Prachumkhong</h1>
-        <h2>Hi, I'm a computer science student at the University of Phayao</h2>
-        <p>You can call me Nestle and this is all of my contact</p>
-        
-        <div class="social-links">
-            <a href="https://www.facebook.com/khemjira.prachumkhong.9" target="_blank" class="social-link">Facebook</a>
-            <a href="https://www.linkedin.com/in/khemjira-prachumkhong-b785aa313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="social-link">LinkedIn</a>
-            <a href="https://www.instagram.com/nestlayle/profilecard/?igsh=MTlweGR3czVtYzFrbQ==" target="_blank" class="social-link">Instagram</a>
-        </div>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <h1>KHEMJIRA</h1>
+        <p>Welcome to my website!</p>
     </div>
+
+    <!-- About Me Section -->
+    <section class="section">
+        <h2>ABOUT ME</h2>
+        <img src="https://i.ibb.co/qpmQswF/kkk.jpg" alt="โปรไฟล์" class="profile-image">
+        <p>Khemjira Prachumkhong</p>
+        <p>I'm a Computer Science student at the University of Phayao 💻</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" style="background-color: #e2e2e2;">
+        <h2>Skills</h2>
+        <p>Communication, Teamwork, Leadership, Management, Creative</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <a href="https://www.facebook.com/khemjira.prachumkhong.9" target="_blank">Facebook</a>
+            <a href="https://www.linkedin.com/in/khemjira-prachumkhong-b785aa313?utm_source=share&utm_campaign=share_ via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/nestlayle" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Khemjira Prachumkhong</p>
+    </footer>
+
 </body>
 </html>
+
