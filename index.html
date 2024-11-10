@@ -56,99 +56,41 @@
             margin-bottom: 20px;
         }
 
-        .section p {
-            font-size: 1.2em;
-            color: #666;
-            margin-bottom: 20px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Profile Image */
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-
-        /* Education Section */
-        .education-section {
-            background-color: #e2e2e2;
-            padding: 60px 20px;
-            margin-bottom: 60px; /* เพิ่มช่องว่างระหว่าง Education กับ Skills */
-        }
-
-        .education-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .education-item {
-            background-color: white;
-            border-radius: 10px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .education-item h3 {
-            font-size: 1.6em;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .education-item p {
-            font-size: 1.1em;
-            color: #666;
-            margin-bottom: 5px;
-        }
-
-        .education-item span {
-            font-weight: bold;
-            color: #333;
-        }
-
         /* Skills Section */
         .skills-section {
             padding: 60px 20px;
-        }
-
-        /* Certificate Section */
-        .certificate-section {
-            padding: 60px 20px;
-            background-color: #f4f4f9;
-        }
-
-        .certificate-container {
             display: flex;
             justify-content: space-around;
-            flex-wrap: wrap;
+            background-color: #e2e2e2;
         }
 
-        .certificate-card {
-            width: 300px;
-            height: 100px;
-            background-color: white;
+        .skill-container {
+            width: 45%;
+            background-color: #fff;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 20px;
-            padding: 20px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
         }
 
-        .certificate-card h3 {
+        .skill-container h3 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 15px;
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .skill-list {
+            list-style-type: none;
+            padding: 10px 20px;
+            text-align: left;
             font-size: 1.2em;
+        }
+
+        .skill-list li {
+            margin-bottom: 10px;
+            color: #666;
         }
 
         /* Contact Info */
@@ -177,48 +119,6 @@
             padding: 15px;
             margin-top: 20px;
         }
-
-        /* Mobile View */
-        @media (max-width: 768px) {
-            .section {
-                margin: 0 5%;
-            }
-
-            .banner h1 {
-                font-size: 1.5em;
-            }
-
-            .section h2 {
-                font-size: 2em;
-            }
-
-            .contact-info a {
-                font-size: 1em;
-                padding: 8px 20px;
-            }
-
-            .profile-image {
-                width: 120px;
-                height: 120px;
-            }
-
-            .education-container {
-                gap: 10px;
-            }
-
-            .education-item {
-                padding: 15px;
-            }
-
-            .certificate-container {
-                justify-content: center;
-            }
-
-            .certificate-card {
-                width: 90%;
-                margin: 10px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -237,51 +137,27 @@
         <p>I'm a Computer Science student at the University of Phayao 💻</p>
     </section>
 
-    <!-- Education Section -->
-    <section class="education-section">
-        <h2>Education</h2>
-        <div class="education-container">
-            <!-- Education Item 1 -->
-            <div class="education-item">
-                <h3>University of Phayao</h3>
-                <p><span>Degree :</span> Bachelor's Degree in Computer Science</p>
-                <p><span>Duration :</span> 2023 - Present</p>
-                <p><span>Description :</span> Currently pursuing a Bachelor's degree in Computer Science, focusing on software development, machine learning, and data science.</p>
-            </div>
-            <!-- Education Item 2 -->
-            <div class="education-item">
-                <h3>Phayaophitthayakhom</h3>
-                <p><span>Degree :</span> High School Diploma</p>
-                <p><span>Duration :</span> 2019 - 2022</p>
-                <p><span>Description :</span> Completed high school with a focus on science and mathematics, achieving excellent results in technical subjects.</p>
-            </div>
-        </div>
-    </section>
-
     <!-- Skills Section -->
-    <section class="skills-section" style="background-color: #e2e2e2;">
-        <h2>Skills</h2>
-        <p>Communication, Teamwork, Leadership, Management, Creative</p>
-    </section>
-
-    <!-- Certificate Section -->
-    <section class="certificate-section">
-        <h2>Certificates</h2>
-        <div class="certificate-container">
-            <!-- Certificate 1 -->
-            <div class="certificate-card">
-                <h3>Cybersecurity Essentials</h3>
-            </div>
-
-            <!-- Certificate 2 -->
-            <div class="certificate-card">
-                <h3>Introduction to basic use of the platform</h3>
-            </div>
-
-            <!-- Certificate 3 -->
-            <div class="certificate-card">
-                <h3>Leadership Development Workshop for the Student Club</h3>
-            </div>
+    <section class="skills-section">
+        <div class="skill-container">
+            <h3>Soft Skills</h3>
+            <ul class="skill-list">
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Leadership</li>
+                <li>Management</li>
+                <li>Creativity</li>
+            </ul>
+        </div>
+        <div class="skill-container">
+            <h3>Hard Skills</h3>
+            <ul class="skill-list">
+                <li>Programming Languages: Python, Java, C++</li>
+                <li>Web Development: HTML, CSS, JavaScript</li>
+                <li>Data Analysis and Machine Learning</li>
+                <li>Database Management: MySQL, MongoDB</li>
+                <li>Cybersecurity Fundamentals</li>
+            </ul>
         </div>
     </section>
 
@@ -302,5 +178,3 @@
 
 </body>
 </html>
-
-
